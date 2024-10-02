@@ -1,230 +1,292 @@
-Contribution: 2024-07-12 20:00
+# Chatbot UI
 
-Contribution: 2024-07-12 20:01
+The open-source AI chat app for everyone.
 
-Contribution: 2024-07-12 20:02
+<img src="./public/readme/screenshot.png" alt="Chatbot UI" width="600">
 
-Contribution: 2024-07-12 20:03
+## Demo
 
-Contribution: 2024-07-12 20:04
+View the latest demo [here](https://x.com/mckaywrigley/status/1738273242283151777?s=20).
 
-Contribution: 2024-07-12 20:05
+## Updates
 
-Contribution: 2024-07-12 20:06
+Hey everyone! I've heard your feedback and am working hard on a big update.
 
-Contribution: 2024-07-12 20:07
+Things like simpler deployment, better backend compatibility, and improved mobile layouts are on their way.
 
-Contribution: 2024-07-14 20:00
+Be back soon.
 
-Contribution: 2024-07-14 20:01
+-- Mckay
 
-Contribution: 2024-07-14 20:02
+## Official Hosted Version
 
-Contribution: 2024-07-14 20:03
+Use Chatbot UI without having to host it yourself!
 
-Contribution: 2024-07-16 20:00
+Find the official hosted version of Chatbot UI [here](https://chatbotui.com).
 
-Contribution: 2024-07-16 20:01
+## Sponsor
 
-Contribution: 2024-07-16 20:02
+If you find Chatbot UI useful, please consider [sponsoring](https://github.com/sponsors/mckaywrigley) me to support my open-source work :)
 
-Contribution: 2024-07-16 20:03
+## Issues
 
-Contribution: 2024-07-16 20:04
+We restrict "Issues" to actual issues related to the codebase.
 
-Contribution: 2024-07-18 20:00
+We're getting excessive amounts of issues that amount to things like feature requests, cloud provider issues, etc.
 
-Contribution: 2024-07-18 20:01
+If you are having issues with things like setup, please refer to the "Help" section in the "Discussions" tab above.
 
-Contribution: 2024-07-18 20:02
+Issues unrelated to the codebase will likely be closed immediately.
 
-Contribution: 2024-07-18 20:03
+## Discussions
 
-Contribution: 2024-07-18 20:04
+We highly encourage you to participate in the "Discussions" tab above!
 
-Contribution: 2024-07-20 20:00
+Discussions are a great place to ask questions, share ideas, and get help.
 
-Contribution: 2024-07-20 20:01
+Odds are if you have a question, someone else has the same question.
 
-Contribution: 2024-07-20 20:02
+## Legacy Code
 
-Contribution: 2024-07-20 20:03
+Chatbot UI was recently updated to its 2.0 version.
 
-Contribution: 2024-07-20 20:04
+The code for 1.0 can be found on the `legacy` branch.
 
-Contribution: 2024-07-20 20:05
+## Updating
 
-Contribution: 2024-07-21 20:00
+In your terminal at the root of your local Chatbot UI repository, run:
 
-Contribution: 2024-07-22 20:00
+```bash
+npm run update
+```
 
-Contribution: 2024-07-22 20:01
+If you run a hosted instance you'll also need to run:
 
-Contribution: 2024-07-22 20:02
+```bash
+npm run db-push
+```
 
-Contribution: 2024-07-22 20:03
+to apply the latest migrations to your live database.
 
-Contribution: 2024-07-22 20:04
+## Local Quickstart
 
-Contribution: 2024-07-22 20:05
+Follow these steps to get your own Chatbot UI instance running locally.
 
-Contribution: 2024-07-24 20:00
+You can watch the full video tutorial [here](https://www.youtube.com/watch?v=9Qq3-7-HNgw).
 
-Contribution: 2024-07-24 20:01
+### 1. Clone the Repo
 
-Contribution: 2024-07-24 20:02
+```bash
+git clone https://github.com/mckaywrigley/chatbot-ui.git
+```
 
-Contribution: 2024-07-24 20:03
+### 2. Install Dependencies
 
-Contribution: 2024-07-24 20:04
+Open a terminal in the root directory of your local Chatbot UI repository and run:
 
-Contribution: 2024-07-24 20:05
+```bash
+npm install
+```
 
-Contribution: 2024-07-24 20:06
+### 3. Install Supabase & Run Locally
 
-Contribution: 2024-07-24 20:07
+#### Why Supabase?
 
-Contribution: 2024-07-24 20:08
+Previously, we used local browser storage to store data. However, this was not a good solution for a few reasons:
 
-Contribution: 2024-07-24 20:09
+- Security issues
+- Limited storage
+- Limits multi-modal use cases
 
-Contribution: 2024-07-25 20:00
+We now use Supabase because it's easy to use, it's open-source, it's Postgres, and it has a free tier for hosted instances.
 
-Contribution: 2024-07-25 20:01
+We will support other providers in the future to give you more options.
 
-Contribution: 2024-07-26 20:00
+#### 1. Install Docker
 
-Contribution: 2024-07-26 20:01
+You will need to install Docker to run Supabase locally. You can download it [here](https://docs.docker.com/get-docker) for free.
 
-Contribution: 2024-07-26 20:02
+#### 2. Install Supabase CLI
 
-Contribution: 2024-07-26 20:03
+**MacOS/Linux**
 
-Contribution: 2024-07-26 20:04
+```bash
+brew install supabase/tap/supabase
+```
 
-Contribution: 2024-07-26 20:05
+**Windows**
 
-Contribution: 2024-07-27 20:00
+```bash
+scoop bucket add supabase https://github.com/supabase/scoop-bucket.git
+scoop install supabase
+```
 
-Contribution: 2024-07-27 20:01
+#### 3. Start Supabase
 
-Contribution: 2024-07-27 20:02
+In your terminal at the root of your local Chatbot UI repository, run:
 
-Contribution: 2024-07-28 20:00
+```bash
+supabase start
+```
 
-Contribution: 2024-07-31 20:00
+### 4. Fill in Secrets
 
-Contribution: 2024-07-31 20:01
+#### 1. Environment Variables
 
-Contribution: 2024-07-31 20:02
+In your terminal at the root of your local Chatbot UI repository, run:
 
-Contribution: 2024-08-01 20:00
+```bash
+cp .env.local.example .env.local
+```
 
-Contribution: 2024-08-01 20:01
+Get the required values by running:
 
-Contribution: 2024-08-01 20:02
+```bash
+supabase status
+```
 
-Contribution: 2024-08-01 20:03
+Note: Use `API URL` from `supabase status` for `NEXT_PUBLIC_SUPABASE_URL`
 
-Contribution: 2024-08-01 20:04
+Now go to your `.env.local` file and fill in the values.
 
-Contribution: 2024-08-01 20:05
+If the environment variable is set, it will disable the input in the user settings.
 
-Contribution: 2024-08-01 20:06
+#### 2. SQL Setup
 
-Contribution: 2024-08-01 20:07
+In the 1st migration file `supabase/migrations/20240108234540_setup.sql` you will need to replace 2 values with the values you got above:
 
-Contribution: 2024-08-01 20:08
+- `project_url` (line 53): `http://supabase_kong_chatbotui:8000` (default) can remain unchanged if you don't change your `project_id` in the `config.toml` file
+- `service_role_key` (line 54): You got this value from running `supabase status`
 
-Contribution: 2024-08-02 20:00
+This prevents issues with storage files not being deleted properly.
 
-Contribution: 2024-08-02 20:01
+### 5. Install Ollama (optional for local models)
 
-Contribution: 2024-08-03 20:00
+Follow the instructions [here](https://github.com/jmorganca/ollama#macos).
 
-Contribution: 2024-08-03 20:01
+### 6. Run app locally
 
-Contribution: 2024-08-03 20:02
+In your terminal at the root of your local Chatbot UI repository, run:
 
-Contribution: 2024-08-03 20:03
+```bash
+npm run chat
+```
 
-Contribution: 2024-08-03 20:04
+Your local instance of Chatbot UI should now be running at [http://localhost:3000](http://localhost:3000). Be sure to use a compatible node version (i.e. v18).
 
-Contribution: 2024-08-03 20:05
+You can view your backend GUI at [http://localhost:54323/project/default/editor](http://localhost:54323/project/default/editor).
 
-Contribution: 2024-08-03 20:06
+## Hosted Quickstart
 
-Contribution: 2024-08-03 20:07
+Follow these steps to get your own Chatbot UI instance running in the cloud.
 
-Contribution: 2024-08-03 20:08
+Video tutorial coming soon.
 
-Contribution: 2024-08-05 20:00
+### 1. Follow Local Quickstart
 
-Contribution: 2024-08-05 20:01
+Repeat steps 1-4 in "Local Quickstart" above.
 
-Contribution: 2024-08-05 20:02
+You will want separate repositories for your local and hosted instances.
 
-Contribution: 2024-08-05 20:03
+Create a new repository for your hosted instance of Chatbot UI on GitHub and push your code to it.
 
-Contribution: 2024-08-05 20:04
+### 2. Setup Backend with Supabase
 
-Contribution: 2024-08-08 20:00
+#### 1. Create a new project
 
-Contribution: 2024-08-08 20:01
+Go to [Supabase](https://supabase.com/) and create a new project.
 
-Contribution: 2024-08-08 20:02
+#### 2. Get Project Values
 
-Contribution: 2024-08-08 20:03
+Once you are in the project dashboard, click on the "Project Settings" icon tab on the far bottom left.
 
-Contribution: 2024-08-08 20:04
+Here you will get the values for the following environment variables:
 
-Contribution: 2024-08-08 20:05
+- `Project Ref`: Found in "General settings" as "Reference ID"
 
-Contribution: 2024-08-09 20:00
+- `Project ID`: Found in the URL of your project dashboard (Ex: https://supabase.com/dashboard/project/<YOUR_PROJECT_ID>/settings/general)
 
-Contribution: 2024-08-09 20:01
+While still in "Settings" click on the "API" text tab on the left.
 
-Contribution: 2024-08-09 20:02
+Here you will get the values for the following environment variables:
 
-Contribution: 2024-08-09 20:03
+- `Project URL`: Found in "API Settings" as "Project URL"
 
-Contribution: 2024-08-09 20:04
+- `Anon key`: Found in "Project API keys" as "anon public"
 
-Contribution: 2024-08-09 20:05
+- `Service role key`: Found in "Project API keys" as "service_role" (Reminder: Treat this like a password!)
 
-Contribution: 2024-08-10 20:00
+#### 3. Configure Auth
 
-Contribution: 2024-08-10 20:01
+Next, click on the "Authentication" icon tab on the far left.
 
-Contribution: 2024-08-10 20:02
+In the text tabs, click on "Providers" and make sure "Email" is enabled.
 
-Contribution: 2024-08-10 20:03
+We recommend turning off "Confirm email" for your own personal instance.
 
-Contribution: 2024-08-10 20:04
+#### 4. Connect to Hosted DB
 
-Contribution: 2024-08-10 20:05
+Open up your repository for your hosted instance of Chatbot UI.
 
-Contribution: 2024-08-10 20:06
+In the 1st migration file `supabase/migrations/20240108234540_setup.sql` you will need to replace 2 values with the values you got above:
 
-Contribution: 2024-08-11 20:00
+- `project_url` (line 53): Use the `Project URL` value from above
+- `service_role_key` (line 54): Use the `Service role key` value from above
 
-Contribution: 2024-08-12 20:00
+Now, open a terminal in the root directory of your local Chatbot UI repository. We will execute a few commands here.
 
-Contribution: 2024-08-12 20:01
+Login to Supabase by running:
 
-Contribution: 2024-08-12 20:02
+```bash
+supabase login
+```
 
-Contribution: 2024-08-12 20:03
+Next, link your project by running the following command with the "Project ID" you got above:
 
-Contribution: 2024-08-12 20:04
+```bash
+supabase link --project-ref <project-id>
+```
 
-Contribution: 2024-08-12 20:05
+Your project should now be linked.
 
-Contribution: 2024-08-12 20:06
+Finally, push your database to Supabase by running:
 
-Contribution: 2024-08-12 20:07
+```bash
+supabase db push
+```
 
-Contribution: 2024-08-12 20:08
+Your hosted database should now be set up!
 
-Contribution: 2024-08-12 20:09
+### 3. Setup Frontend with Vercel
 
+Go to [Vercel](https://vercel.com/) and create a new project.
+
+In the setup page, import your GitHub repository for your hosted instance of Chatbot UI. Within the project Settings, in the "Build & Development Settings" section, switch Framework Preset to "Next.js".
+
+In environment variables, add the following from the values you got above:
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `NEXT_PUBLIC_OLLAMA_URL` (only needed when using local Ollama models; default: `http://localhost:11434`)
+
+You can also add API keys as environment variables.
+
+- `OPENAI_API_KEY`
+- `AZURE_OPENAI_API_KEY`
+- `AZURE_OPENAI_ENDPOINT`
+- `AZURE_GPT_45_VISION_NAME`
+
+For the full list of environment variables, refer to the '.env.local.example' file. If the environment variables are set for API keys, it will disable the input in the user settings.
+
+Click "Deploy" and wait for your frontend to deploy.
+
+Once deployed, you should be able to use your hosted instance of Chatbot UI via the URL Vercel gives you.
+
+## Contributing
+
+We are working on a guide for contributing.
+
+## Contact
+
+Message Mckay on [Twitter/X](https://twitter.com/mckaywrigley)
