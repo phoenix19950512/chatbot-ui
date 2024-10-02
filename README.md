@@ -4,10 +4,6 @@ The open-source AI chat app for everyone.
 
 <img src="./public/readme/screenshot.png" alt="Chatbot UI" width="600">
 
-## Demo
-
-View the latest demo [here](https://x.com/mckaywrigley/status/1738273242283151777?s=20).
-
 ## Updates
 
 Hey everyone! I've heard your feedback and am working hard on a big update.
@@ -23,10 +19,6 @@ Be back soon.
 Use Chatbot UI without having to host it yourself!
 
 Find the official hosted version of Chatbot UI [here](https://chatbotui.com).
-
-## Sponsor
-
-If you find Chatbot UI useful, please consider [sponsoring](https://github.com/sponsors/mckaywrigley) me to support my open-source work :)
 
 ## Issues
 
@@ -77,7 +69,7 @@ You can watch the full video tutorial [here](https://www.youtube.com/watch?v=9Qq
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/mckaywrigley/chatbot-ui.git
+git clone https://github.com/phoenix19950512/chatbot-ui.git
 ```
 
 ### 2. Install Dependencies
@@ -289,4 +281,4 @@ We are working on a guide for contributing.
 
 ## Contact
 
-Message Mckay on [Twitter/X](https://twitter.com/mckaywrigley)
+Message me on [Gmail](mailto://phoenix19950512@gmail.com)
